@@ -29,3 +29,12 @@ if(($amount % 10) || ($amount ==10) || ($amount == 30)){
 } else cash($amount, $_200, $_50, $_2);
 
 echo "You will have $_200 of 200, $_50 of 50, $_20 of 20\n";
+echo "You will have $_200 of 200, $_50 of 50, $_20 of 20\n";
+
+
+echo "\n\nTask #2. Make some example with if-elseif.\nEnter some integer number:\n";
+$num = fgets(fopen("php://stdin", "r"));
+
+if($num == 0) echo "You enter zero or not a number!";
+elseif($num%2) echo "Your number is odd!";
+else echo "Your number is even!";
